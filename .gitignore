@@ -1,7 +1,7 @@
 /target/
 !.mvn/wrapper/maven-wrapper.jar
 .mvn
-
+/Servers
 ### STS ###
 .apt_generated
 .classpath
@@ -24,3 +24,4 @@
 /dist/
 /nbdist/
 /.nb-gradle/
+/.metadata/
