@@ -19,7 +19,9 @@ Deve ter o PostgreSQL instalado
 
 Após instalado, acesse com o seguinte comando:
 
+```
 psql -h localhost -U postgres
+```
 
 Digite a senha do mesmo
 
@@ -30,36 +32,59 @@ CREATE DATABASE locadora;
 ENV=production
 
 POSTGRES_USER=nome_do_usuário_do_banco 
+
 POSTGRES_PW=senha_de_acesso_ao_banco
+
 POSTGRES_URL=url_do_banco
+
 POSTGRES_DB=nome_do_banco
 
 Exemplo para setar as variáveis em ambiente Linux:
 
 Digite no terminal
 
+```
 nano ~/.bashrc
+```
 
 Cole no arquivo .bashrc:
 
+```
 export ENV=production
 
 export POSTGRES_USER=postgres
 export POSTGRES_PW=123
 export POSTGRES_URL=localhost
 export POSTGRES_DB=locadora
+```
 
 Antes de rodar a aplicação entre no repositório e digite:
 
+```
 pipenv shell
+```
+
+```
 pipenv install
+```
+
+```
 flask db init
+```
+
+```
 flask db migrate
+```
+
+```
 flask db upgrade
+```
 
 Para rodar a aplicação:
 
+```
 flask run
+```
 
 ### Endpoints
 
