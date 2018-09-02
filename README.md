@@ -49,6 +49,18 @@ export POSTGRES_PW=123
 export POSTGRES_URL=localhost
 export POSTGRES_DB=locadora
 
+Antes de rodar a aplicação entre no repositório e digite:
+
+pipenv shell
+pipenv install
+flask db init
+flask db migrate
+flask db upgrade
+
+Para rodar a aplicação:
+
+flask run
+
 ### Endpoints
 
 /api/v1/registro_admin        método: POST
